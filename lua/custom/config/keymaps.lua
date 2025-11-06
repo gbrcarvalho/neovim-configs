@@ -6,12 +6,15 @@
 --
 -- insert mode remaps
 vim.keymap.set('i', "'''", '``')
+vim.keymap.set('i', '<C-f>', '<Esc>wa')
 
 -- normal mode remaps
 -- stop highlighting with leader h in normal mode
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>') -- save current file with leader w in normal mode
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>') -- stop highlighting with leader h in normal mode
+
+vim.keymap.set('n', '<leader>bd', ':bd<CR>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
