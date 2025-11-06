@@ -7,6 +7,20 @@
 vim.o.number = true
 vim.o.relativenumber = true
 
+vim.o.backspace = '2'
+vim.o.laststatus = 2
+vim.o.autowrite = true
+vim.o.cursorline = true
+vim.o.autoread = true
+
+-- use 2 spaces for the tab character
+vim.o.tabstop = 2
+-- use 2 spaces for indentation
+vim.o.shiftwidth = 2
+vim.o.shiftround = true
+-- use only space characters, no tab characters
+vim.o.expandtab = true
+
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 -- vim.o.relativenumber = true
