@@ -4,6 +4,9 @@
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 --
+-- insert mode remaps
+vim.keymap.set('i', "'''", '``')
+
 -- normal mode remaps
 -- stop highlighting with leader h in normal mode
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
